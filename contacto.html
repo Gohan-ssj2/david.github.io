@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="contacto.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>David Alonso</h1>
+        <nav class="navegacion-web">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="micro-game.html">Micro-Game</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <p>
+                <label for="campo-nombre">Nombre: </label>
+                <input type="text" name="nombre" id="campo-nombre" required>
+            </p>
+            <p>
+                <label for="campo-fecha">Fecha: </label>
+                <input type="date" name="nacimiento" id="campo-fecha" required>
+            </p>
+            <p>
+                <label for="campo-color">Color favorito: </label>
+                <input type="color" name="color fav" id="campo-color" value="#ff0000">
+            </p>
+            <p>
+                <label for="campo-comentario">Comentario</label>
+                <textarea id="campo-comentario" name="comentario" required></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Al no suscribirte te robaremos el alma</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 David Alonso</p>
+    </footer>
+</body>
+</html>

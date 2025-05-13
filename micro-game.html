@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Juego</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="microjuego.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>David Alonso</h1>
+        <nav class="navegacion-web">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="micro-game.html">Micro-Game</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Adivina el número</h2>
+        <form id="juego-form">
+            <p>Intenta adivinar un número entre 1 y 100</p>
+            <output id="resultado">¡Prueba suerte!!!</output>
+            <p>
+                <label for="adivina">Tu número: </label>
+                <input type="number" name="adivina" id="adivina" min="1" max="100" required>
+            </p>
+            <p>
+                <input type="button" id="boton" value="¡Adivina!">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 David Alonso</p>
+    </footer>
+</body>
+</html>
