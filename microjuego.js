@@ -1,4 +1,5 @@
 // Variables del juego
+let numerosProbados = [];
 let numero = Math.floor(Math.random() * 100) + 1;
 const num_min = 1;
 const num_max = 100;
@@ -29,6 +30,8 @@ function compara_numero() {
 
     intentos++;
     boton.value = `¡Adivina! (${intentos})`;
+	numerosProbados.push(input);
+	resultado.innerHTML += `<p>Números probados: ${numerosProbados.join(', ')}</p>`;
     
     // Comprobaciones juego
     if (input > numero) {

@@ -211,3 +211,8 @@ footer nav ul a:hover {
         padding: 20px !important;
     }
 }
+
+.fecha {
+    color: #666;
+    font-style: italic;
+}
